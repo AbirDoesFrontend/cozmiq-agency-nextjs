@@ -84,8 +84,8 @@ export default function Navbar() {
   }, [isMobileOpen]);
 
   return (
-    <section className="hero-section">
-      <header className="z-50 relative m-0 mx-auto px-0 w-full">
+    <>
+      <header className="z-50 fixed m-0 mx-auto px-0 w-full">
         <div className="wrapper">
           <nav className="nav-wrapper flex items-center justify-between">
             {/* Logo */}
@@ -237,6 +237,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </section>
+    </>
   );
 }
