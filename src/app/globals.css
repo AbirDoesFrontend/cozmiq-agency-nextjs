@@ -1,8 +1,72 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Brand Colors */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #0939d6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  /* Secondary Brand Colors */
+  --color-secondary-50: #fefce8;
+  --color-secondary-100: #fef9c3;
+  --color-secondary-200: #fef08a;
+  --color-secondary-300: #fde047;
+  --color-secondary-400: #facc15;
+  --color-secondary-500: #bdfb00;
+  --color-secondary-600: #eab308;
+  --color-secondary-700: #a16207;
+  --color-secondary-800: #854d0e;
+  --color-secondary-900: #713f12;
+
+  /* Accent Colors */
+  --color-accent-50: #f0f9ff;
+  --color-accent-100: #e0f2fe;
+  --color-accent-200: #bae6fd;
+  --color-accent-300: #7dd3fc;
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+  --color-accent-700: #0369a1;
+  --color-accent-800: #075985;
+  --color-accent-900: #0c4a6e;
+
+  /* Neutral Colors */
+  --color-neutral-50: #f8fafc;
+  --color-neutral-100: #f1f5f9;
+  --color-neutral-200: #e2e8f0;
+  --color-neutral-300: #cbd5e1;
+  --color-neutral-400: #94a3b8;
+  --color-neutral-500: #64748b;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #334155;
+  --color-neutral-800: #1e293b;
+  --color-neutral-900: #0f172a;
+
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Specific Brand Colors */
+  --color-brand-blue: #0939d6;
+  --color-brand-yellow: #bdfb00;
+  --color-brand-gray: #4a4c56;
+  --color-brand-black: #07080b;
+  --color-brand-white: #ffffff;
+  --color-text-primary: #1d1f2c;
+  --color-text-secondary: #d2d2d5;
+  --color-border-light: #d2d2d5;
+  --color-border-dark: #ffffff1a;
+  --color-background-light: #f9f9f9;
+  --color-background-dark: #0f0f17;
 }
 
 @theme inline {
@@ -18,6 +82,112 @@
     --foreground: #ededed;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+.wrapper {
+  @apply mx-auto px-4 xl:px-0 w-full lg:max-w-[1320px];
+}
+
+.nav-container {
+  @apply flex gap-6;
+}
+
+.primary-color {
+  color: var(--color-primary-500);
+}
+.primary-foreground {
+  color: var(--color-brand-black);
+}
+
+.foreground-color {
+  color: var(--color-text-primary);
+}
+.dark-foreground-color {
+  color: var(--color-text-secondary);
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+p,
+span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* Media */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p,
+  span {
+    font-size: 15px;
+  }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  p,
+  span,
+  .hero-description,
+  .project-card-content-description,
+  .stats-description,
+  .service-card-description,
+  .discovery-card-description,
+  .why-choose-feature-description,
+  .pricing-card-description,
+  .cta-description {
+    font-size: 16px;
+  }
+}
+/* Media */
 
 body {
   background: var(--background);
@@ -48,6 +218,56 @@ body {
   overflow: hidden;
 }
 
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-delay {
+  animation-delay: 1.5s;
+}
+
+@keyframes star-movement-bottom {
+  0%   { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(-100%, 0%); opacity: 0; }
+}
+
+@keyframes star-movement-top {
+  0%   { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(100%, 0%); opacity: 0; }
+}
+
+/* put animation utilities into Tailwind's utilities layer so ordering is right */
+@layer utilities {
+  .animate-star-movement-bottom {
+    animation-name: star-movement-bottom;
+    animation-duration: var(--star-duration, 6s); /* customizable via CSS var */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .animate-star-movement-top {
+    animation-name: star-movement-top;
+    animation-duration: var(--star-duration, 6s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+/* Animations */
+
 .wrapper {
   @apply mx-auto px-4 xl:px-0 w-full lg:max-w-[1320px];
 }
@@ -71,4 +291,90 @@ body {
 
 .btn-primary {
   @apply px-8 py-3 border border-[#FFFFFF1A];
+}
+
+/* Global */
+.badge-dot{
+  @apply bg-[#ffffff] w-[4px] h-[4px] rounded-[9999px] grow-0 shrink-0 basis-auto;
+}
+
+.badge-content {
+  @apply flex items-center gap-2.5 px-4 py-2.5;
+}
+
+.badge-inner{
+  @apply border-[1px] border-solid rounded-[9999px] inline-flex items-center;
+}
+
+/* Global */
+
+/* Hero Section */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../public/img/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero-content-wrapper {
+  @apply z-10 relative px-4 sm:px-6 lg:px-8 py-[100px] md:py-[160px] xl:py-[240px];
+}
+
+.hero-badge-container {
+  @apply flex justify-center;
+}
+
+.hero-title {
+  @apply mb-5 text-center;
+}
+
+.hero-description {
+  @apply mx-auto max-w-[744px] text-center;
+}
+
+.hero-cta-container {
+  @apply flex justify-center items-center gap-4 mt-12 mb-[100px];
+}
+
+.border-Width {
+  @apply bg-[#D2D2D5] w-[100px] h-[1px];
+}
+
+.trusted-companies-container {
+  @apply text-center;
+}
+
+.trusted-companies-divider {
+  @apply flex justify-center items-center gap-2 mx-auto mb-12;
+}
+
+.trusted-companies-text {
+  @apply gap-3 text-[#D2D2D5];
+}
+
+.trusted-companies-carousel {
+  @apply relative overflow-hidden;
+}
+
+.trusted-companies-track {
+  @apply flex items-center gap-8;
+  transition: transform 0.1s linear;
+}
+
+.trusted-company-item {
+  @apply flex flex-shrink-0 justify-center items-center;
+}
+
+.trusted-company-item img {
+  @apply w-[80px] md:w-[100px] h-[40px] md:h-[50px] object-contain;
+}
+
+.hero-floating-tag-left {
+  @apply top-[40%] left-0 absolute w-[200px];
+}
+
+.hero-floating-tag-right {
+  @apply top-[30%] right-0 absolute w-[140px];
 }
