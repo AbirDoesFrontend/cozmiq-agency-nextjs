@@ -139,6 +139,56 @@ span {
   line-height: 160%;
 }
 
+/* Media */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p,
+  span {
+    font-size: 15px;
+  }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  p,
+  span,
+  .hero-description,
+  .project-card-content-description,
+  .stats-description,
+  .service-card-description,
+  .discovery-card-description,
+  .why-choose-feature-description,
+  .pricing-card-description,
+  .cta-description {
+    font-size: 16px;
+  }
+}
+/* Media */
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -186,6 +236,36 @@ body {
 .float-delay {
   animation-delay: 1.5s;
 }
+
+@keyframes star-movement-bottom {
+  0%   { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(-100%, 0%); opacity: 0; }
+}
+
+@keyframes star-movement-top {
+  0%   { transform: translate(0%, 0%); opacity: 1; }
+  100% { transform: translate(100%, 0%); opacity: 0; }
+}
+
+/* put animation utilities into Tailwind's utilities layer so ordering is right */
+@layer utilities {
+  .animate-star-movement-bottom {
+    animation-name: star-movement-bottom;
+    animation-duration: var(--star-duration, 6s); /* customizable via CSS var */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .animate-star-movement-top {
+    animation-name: star-movement-top;
+    animation-duration: var(--star-duration, 6s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
 /* Animations */
 
 .wrapper {
@@ -213,8 +293,22 @@ body {
   @apply px-8 py-3 border border-[#FFFFFF1A];
 }
 
-/* Hero Section */
+/* Global */
+.badge-dot{
+  @apply bg-[#ffffff] w-[4px] h-[4px] rounded-[9999px] grow-0 shrink-0 basis-auto;
+}
 
+.badge-content {
+  @apply flex items-center gap-2.5 px-4 py-2.5;
+}
+
+.badge-inner{
+  @apply border-[1px] border-solid rounded-[9999px] inline-flex items-center;
+}
+
+/* Global */
+
+/* Hero Section */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../../public/img/hero-bg.png");
