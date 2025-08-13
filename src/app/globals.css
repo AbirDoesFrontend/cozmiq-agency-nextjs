@@ -105,7 +105,7 @@ html {
 }
 
 .foreground-color {
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
 }
 .dark-foreground-color {
   color: var(--color-text-secondary);
@@ -238,13 +238,25 @@ body {
 }
 
 @keyframes star-movement-bottom {
-  0%   { transform: translate(0%, 0%); opacity: 1; }
-  100% { transform: translate(-100%, 0%); opacity: 0; }
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0%);
+    opacity: 0;
+  }
 }
 
 @keyframes star-movement-top {
-  0%   { transform: translate(0%, 0%); opacity: 1; }
-  100% { transform: translate(100%, 0%); opacity: 0; }
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 0%);
+    opacity: 0;
+  }
 }
 
 /* put animation utilities into Tailwind's utilities layer so ordering is right */
@@ -294,7 +306,7 @@ body {
 }
 
 /* Global */
-.badge-dot{
+.badge-dot {
   @apply bg-[#ffffff] w-[4px] h-[4px] rounded-[9999px] grow-0 shrink-0 basis-auto;
 }
 
@@ -302,7 +314,7 @@ body {
   @apply flex items-center gap-2.5 px-4 py-2.5;
 }
 
-.badge-inner{
+.badge-inner {
   @apply border-[1px] border-solid rounded-[9999px] inline-flex items-center;
 }
 
@@ -378,3 +390,41 @@ body {
 .hero-floating-tag-right {
   @apply top-[30%] right-0 absolute w-[140px];
 }
+/* Hero End */
+
+/* About Start */
+/* About Section Components */
+.about-section {
+  @apply relative py-[60px] lg:py-[140px];
+}
+
+.about-content-wrapper {
+  @apply flex lg:flex-row flex-col justify-between items-start gap-[20px];
+}
+
+.about-left-section {
+  @apply flex flex-col items-start gap-10 lg:gap-[128px] basis-2/5;
+}
+
+.about-text-span {
+  @apply font-semibold md:italic dark:text-[#D5EDFF] 
+         text-3xl lg:text-4xl xl:text-5xl 
+         leading-snug md:leading-tight lg:leading-tight;
+}
+
+.about-right-section {
+  @apply basis-3/5 mb-6;
+}
+
+.about-button-section {
+  @apply flex lg:flex-row flex-col justify-between items-start lg:items-end gap-[60px];
+}
+
+.about-button-container {
+  @apply flex justify-start basis-2/5;
+}
+
+.about-image-container {
+  @apply flex justify-end basis-3/5;
+}
+/* About End */

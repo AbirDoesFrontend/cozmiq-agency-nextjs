@@ -3,8 +3,9 @@ import React from "react";
 
 import TrustedCompanies from "./TrustedCompanies";
 import HeroContent from "./HeroContent";
-import BadgeLabel from "../BadgeLabel";
+
 import FloatingDecoratives from "./FloatingDecoratives";
+import BadgeLabel from "@/components/BadgeLabel";
 
 const Hero = () => {
   return (

@@ -7,6 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 import mainLogo from "../../../public/img/main-logo.png";
 import sunIcon from "../../../public/img/sun.png";
 import moonIcon from "../../../public/img/moon.png";
+import PrimaryBtn from "../global/PrimaryBtn";
 
 const navLinks = [
   { href: "#", label: "Home" },
@@ -116,10 +117,7 @@ export default function Navbar() {
 
             {/* Desktop actions */}
             <div className="hidden lg:flex items-center gap-3">
-              <button className="btn-primary get-started-btn cursor-pointer">
-                Get Started
-                <FaArrowRight />
-              </button>
+              <PrimaryBtn text="Get Started"/>
 
               <button
                 id="theme-toggle"
