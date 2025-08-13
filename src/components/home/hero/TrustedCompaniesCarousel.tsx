@@ -1,11 +1,11 @@
 import Image, { StaticImageData } from "next/image";
 import React, { useMemo } from "react";
-import Group1Image from "../../../public/img/group-1.png";
-import Group2Image from "../../../public/img/group-2.png";
-import Group3Image from "../../../public/img/group-3.png";
-import Group4Image from "../../../public/img/group-4.png";
-import Group5Image from "../../../public/img/group-5.png";
-import Group6Image from "../../../public/img/group-6.png";
+import Group1Image from "../../../../public/img/group-1.png";
+import Group2Image from "../../../../public/img/group-2.png";
+import Group3Image from "../../../../public/img/group-3.png";
+import Group4Image from "../../../../public/img/group-4.png";
+import Group5Image from "../../../../public/img/group-5.png";
+import Group6Image from "../../../../public/img/group-6.png";
 
 type ImgItem = {
   src: StaticImageData | string;

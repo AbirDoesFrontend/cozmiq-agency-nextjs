@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-import LeftTagImage from "../../../public/img/left-tag.png";
-import RightTagImage from "../../../public/img/right-tag.png";
+import LeftTagImage from "../../../../public/img/left-tag.png";
+import RightTagImage from "../../../../public/img/right-tag.png";
 
 const FloatingDecoratives = () => {
   return (
