@@ -428,3 +428,117 @@ body {
   @apply flex justify-end basis-3/5;
 }
 /* About End */
+
+/* Projects Start */
+  /* Project Section Components */
+  .project-section {
+    @apply bg-black py-[60px] md:py-[100px] lg:py-[140px] text-white;
+  }
+
+  .project-content-wrapper {
+    @apply flex lg:flex-row flex-col lg:justify-between items-start lg:items-end gap-[60px] w-full;
+  }
+
+  .project-content-left {
+    @apply flex flex-col items-start gap-6;
+  }
+
+  .project-content-right {
+    @apply flex justify-end;
+  }
+
+  .project-filter-buttons {
+    @apply flex gap-4 my-12 w-full overflow-x-auto lg:grid lg:grid-cols-6 lg:overflow-visible;
+  }
+
+  .project-filter-btn {
+    @apply hover:bg-gray-800 px-6 py-3 border border-gray-600 rounded-full text-white transition-all duration-300 flex-shrink-0 w-auto lg:w-full;
+  }
+
+  .project-grid {
+    @apply gap-8 grid grid-cols-1;
+  }
+
+  .project-card {
+    @apply bg-gray-900 hover:shadow-2xl rounded-[20px] overflow-hidden transition-all duration-300;
+  }
+
+  .project-card-header {
+    @apply p-6 border-gray-700 border-b;
+  }
+
+  .project-card-title {
+    @apply mb-2 font-semibold text-white text-xl;
+  }
+
+  .project-card-category {
+    @apply flex justify-center;
+  }
+
+  .project-card-category-badge {
+    @apply inline-flex items-center px-4 py-2 border border-gray-600 rounded-full text-white;
+  }
+
+  .project-card-category-dot {
+    @apply bg-white mr-2 rounded-full w-1 h-1;
+  }
+
+  .project-card-image {
+    @apply w-full h-48 object-cover;
+  }
+
+  .project-card-content {
+    @apply p-6;
+  }
+
+  .project-card-content-title {
+    @apply mb-3 font-semibold text-white text-lg;
+  }
+
+  .project-card-content-description {
+    @apply mb-6 text-white;
+  }
+
+  .project-card-cta {
+    @apply bg-gray-800/50 hover:bg-gray-800 backdrop-blur px-8 py-3.5 border border-gray-600 rounded-[100px] font-medium text-gray-300 hover:text-[#0939d6] text-lg duration-200;
+  }
+
+  .project-single-galary img {
+    @apply hover:rotate-6 hover:scale-125 transition-transform duration-300;
+  }
+  /* bg-[#FFFFFF08] backdrop-blur-sm */
+  .project-galary-heading {
+    @apply flex justify-between items-center gap-2.5 w-full;
+  }
+  .project-single-galary {
+    @apply flex lg:flex-row flex-col justify-between items-start lg:items-end gap-[64px] w-full;
+  }
+  .project-galary {
+    @apply flex flex-col items-center gap-8 w-full;
+  }
+  .project-galary-content {
+    @apply flex flex-col items-start gap-5 w-full;
+  }
+
+  .project-section {
+    @apply bg-[#01010A] py-16 md:py-24 lg:py-32;
+  }
+  .projects {
+    @apply flex flex-col items-start gap-12 lg:gap-16;
+  }
+  .project-content {
+    @apply flex md:flex-row flex-col justify-between items-start lg:items-end gap-5 w-full;
+  }
+  .project-content-left {
+    @apply flex flex-col items-start gap-3 lg:gap-5 max-w-[605px];
+  }
+  .projects-btn {
+    @apply justify-center lg:justify-between items-center gap-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 w-full;
+  }
+  .project-outline-btn {
+    @apply inline-flex justify-center items-center px-8 py-2.5 border border-gray-600 rounded-full text-center;
+  }
+  .projects-grid {
+    @apply flex flex-col gap-[48px] bg-[url('../../public/img/Blur2.png')] bg-cover bg-center bg-[#0d0d0e] backdrop-blur-sm p-[15px] md:p-[30px] lg:p-[48px] rounded-md hover:bg-[#0939D6] transition-colors duration-300;
+  }
+/* Projects End */
