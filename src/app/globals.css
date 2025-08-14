@@ -751,15 +751,15 @@ body {
 }
 
 .cta-container {
-  @apply relative bg-img bg-cover bg-center py-16 md:py-20 lg:py-[100px] rounded-[20px];
+  @apply relative bg-cover bg-center py-16 md:py-20 lg:py-[100px] rounded-[20px];
 }
 
 .cta-floating-tag-left {
-  @apply top-[50%] left-[8%] float-animation absolute;
+  @apply top-[50%] left-[8%] absolute;
 }
 
 .cta-floating-tag-right {
-  @apply top-[40%] right-[10%] float-animation float-delay absolute;
+  @apply top-[40%] right-[10%] absolute;
 }
 
 .cta-title {
