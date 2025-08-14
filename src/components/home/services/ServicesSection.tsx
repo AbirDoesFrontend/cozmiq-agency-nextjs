@@ -93,7 +93,7 @@ const ServicesSection = () => {
                     width={1000}
                     height={1000}
                   />
-                  <div className="bg-[#F9F9F9] p-[15px] card-icon-arrow ">
+                  <div className="bg-[#F9F9F9] p-[15px] card-icon-arrow absolute top-0 right-0">
                     <Image src={ArrowImage} alt="" />
                   </div>
                 </div>
