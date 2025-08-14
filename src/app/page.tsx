@@ -1,4 +1,5 @@
 import About from "@/components/home/about/About";
+import CTA from "@/components/home/cta/CTA";
 import Discovery from "@/components/home/discovery/Discovery";
 import Faq from "@/components/home/faq/Faq";
 import Hero from "@/components/home/hero/Hero";
@@ -23,6 +24,7 @@ export default function Home() {
       <WhyChooseUs />
       <Pricing />
       <Faq />
+      <CTA />
     </>
   );
 }
