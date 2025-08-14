@@ -1,0 +1,106 @@
+import Image from 'next/image'
+import React from 'react'
+
+import Icon9 from '../../../../public/img/icon9.png';
+import Icon7 from '../../../../public/img/icon7.png';
+
+const Discovery = () => {
+  return (
+    <section className="bg-black pb-[140px] overflow-hidden">
+      <div className="flex justify-center items-center p-4">
+        <div className="w-full perspective-1200">
+          <div
+            className="lg:relative gap-10 grid grid-cols-1 md:grid-cols-2 lg:min-h-[32rem] transform-gpu"
+          >
+            <div className="group lg:absolute card-position-1">
+              <div
+                className="bg-[#0939D6] shadow-2xl mx-auto p-6 lg:p-8 rounded-[20px] w-full text-white lg:rotate-card1 hover:scale-105 transition-all duration-400 card-width"
+              >
+                <div className="flex flex-col gap-3 h-full">
+                  <div className="mb-8 lg:mb-10">
+                    <Image src={Icon9} alt="" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="mb-3 lg:mb-4">Discovery and Strategy</h3>
+                    <p className="text-white">
+                      We start by understanding your business goals and
+                      challenges. Based on this, we create a tailored strategy
+                      that aligns with your vision, ensuring we&apos;re on the right
+                      path from the beginning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group lg:absolute card-position-2">
+              <div
+                className="bg-[#FFFFFF0D] shadow-2xl p-6 lg:p-8 rounded-[20px] text-white lg:rotate-card2 hover:scale-105 transition-all duration-400 card-width"
+              >
+                <div className="flex flex-col gap-3 h-full">
+                  <div className="mb-8 lg:mb-10">
+                    <Image src={Icon7} alt="" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="mb-3 lg:mb-4">Design and Development</h3>
+                    <p className="text-white">
+                      We start by understanding your business goals and
+                      challenges. Based on this, we create a tailored strategy
+                      that aligns with your vision, ensuring we&apos;re on the right
+                      path from the beginning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="group lg:absolute card-position-3">
+              <div
+                className="bg-[#FFD500] shadow-2xl p-6 lg:p-8 rounded-[20px] text-white lg:rotate-card1 hover:scale-105 transition-all duration-400 card-width"
+              >
+                <div className="flex flex-col gap-3 h-full">
+                  <div className="mb-8 lg:mb-10">
+                    <Image src={Icon7} alt="" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="mb-3 lg:mb-4 text-black">Review and Feedback</h3>
+                    <p className="text-black">
+                      We start by understanding your business goals and
+                      challenges. Based on this, we create a tailored strategy
+                      that aligns with your vision, ensuring we&apos;re on the right
+                      path from the beginning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="group lg:absolute card-position-4">
+              <div
+                className="bg-[#E9E9EA] shadow-2xl p-6 lg:p-8 rounded-[20px] text-white lg:rotate-card2 hover:scale-105 transition-all duration-400 card-width"
+              >
+                <div className="flex flex-col gap-3 h-full">
+                  <div className="mb-8 lg:mb-10">
+                    <Image src={Icon7} alt="" />
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="mb-3 lg:mb-4 text-black">
+                      Launch and Optimization
+                    </h3>
+                    <p className="text-black">
+                      We start by understanding your business goals and
+                      challenges. Based on this, we create a tailored strategy
+                      that aligns with your vision, ensuring we&apos;re on the right
+                      path from the beginning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Discovery
