@@ -70,7 +70,7 @@ const Project = () => {
           <div className="project-content-left">
             <BadgeSecondary always-dark>Projects</BadgeSecondary>
             <h2 className="text-white">Our Work Speaks for Itself</h2>
-            <p className="text-[#FFFFFF] md:max-w-[600px]">
+            <p className="md:max-w-[600px] text-[#FFFFFF]">
               Take a look at our portfolio to see the incredible projects
               we&apos;ve delivered for clients across various industries.
             </p>
@@ -93,8 +93,8 @@ const Project = () => {
           {categories.map((cat) => (
             <button
               key={cat}
-              className={`project-filter-btn text-white mr-3 whitespace-nowrap py-2 px-4 rounded-full transition-all duration-150 cursor-pointer${
-                selectedCategory === cat ? "bg-white/10 font-semibold" : ""
+              className={`project-filter-btn text-white hover:text-[#0F1016] hover:bg-white mr-3 whitespace-nowrap py-2 px-4 rounded-full transition-all duration-150 cursor-pointer${
+                selectedCategory === cat ? "bg-white text-[#0F1016]" : ""
               }`}
               onClick={() => setSelectedCategory(cat)}
             >
@@ -103,7 +103,7 @@ const Project = () => {
           ))}
         </div>
 
-        <div className="project-grid grid gap-8 mt-8">
+        <div className="gap-8 grid project-grid mx-auto">
           {filteredProjects.map((project, idx) => {
             const topClass = TOP_CLASSES[idx % TOP_CLASSES.length];
             return (
@@ -111,32 +111,31 @@ const Project = () => {
                 key={project.id}
                 className={`sticky projects-grid ${topClass}`}
               >
-                <div className="project-galary-heading flex items-center justify-between">
+                <div className="flex justify-between items-center project-galary-heading">
                   <h2 className="text-white">{project.title}</h2>
                   <BadgeLabel>{project.tag}</BadgeLabel>
                 </div>
 
-                <div className="project-single-galary mt-4 grid md:grid-cols-2 gap-6 items-start">
+                <div className="items-start gap-6 grid md:grid-cols-2 mt-4 project-single-galary">
                   <div className="rounded-[20px] w-full h-full overflow-hidden">
                     <Image
                       src={project.image}
                       alt={`${project.title} Project Thumbnail`}
                       width={1000}
                       height={1000}
-                      className="object-cover w-full h-full"
+                      className="w-full h-full object-cover"
                     />
                   </div>
 
                   <div className="project-galary-content">
                     <h3 className="text-white">{project.heading}</h3>
-                    <p className="text-white mt-2">{project.description}</p>
+                    <p className="mt-2 text-white">{project.description}</p>
 
                     <Link
                       href={project.detailsUrl}
-                      className="inline-flex items-center gap-3 mt-6 cursor-pointer bg-gray-800/50 backdrop-blur px-8 py-3.5 border border-gray-600 rounded-[100px] font-medium text-gray-300 text-lg duration-200"
+                      className="inline-flex items-center gap-3 bg-gray-800/50 backdrop-blur mt-6 px-8 py-3.5 border border-gray-600 rounded-[100px] font-medium text-gray-300 text-lg duration-200 cursor-pointer"
                     >
-                      View Details{" "}
-                      <FaArrowRight size={18}/>
+                      View Details <FaArrowRight size={18} />
                     </Link>
                   </div>
                 </div>

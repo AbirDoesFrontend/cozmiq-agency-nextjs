@@ -1,20 +1,19 @@
 import BadgeSecondary from "@/components/global/BadgeSecondary";
 import Image from "next/image";
-import React from "react";
 
-import LeftTagImage from '../../../../public/img/left-tag.png'
-import RightTagImage from '../../../../public/img/right-tag.png'
-import CtaPersonImage from '../../../../public/img/cta-person.png'
+import CtaPersonImage from "../../../../public/img/cta-person.png";
+import LeftTagImage from "../../../../public/img/left-tag.png";
+import RightTagImage from "../../../../public/img/right-tag.png";
 
 const CTA = () => {
   return (
-    <section className="bg-white dark:bg-black pb-24 md:pb-28 lg:pb-[140px] text-center">
-      <div className="relative bg-img bg-cover bg-center py-16 md:py-20 lg:py-[100px] rounded-[20px] wrapper">
+    <section className="bg-white dark:bg-black py-16 lg:py-[140px] text-center">
+      <div className="relative py-14 md:py-16 lg:py-[100px] rounded-[20px] cta wrapper">
         <div className="hidden md:block">
           <Image
             src={LeftTagImage}
             alt={"left decorative image"}
-            className="hero-floating-tag-left float-animation float-delay"
+            className="float-animation float-delay hero-floating-tag-left"
             width={1000}
             height={1000}
           />
@@ -47,11 +46,11 @@ const CTA = () => {
             width={1000}
             height={1000}
           />
-          <button className="flex flex-col justify-start items-start">
+          <button className="flex flex-col justify-start items-start text-white">
             <p>Schedule A Free Call</p>
             <div className="flex items-center gap-2">
               <div className="bg-[#1DD35A] rounded-full w-2 h-2"></div>
-              <span className="text-[12px]">Open and ready</span>
+              <span className="text-[12px] text-white">Open and ready</span>
             </div>
           </button>
         </div>

@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import mainLogo from "../../../public/img/main-logo.png";
-import sunIcon from "../../../public/img/sun.png";
 import moonIcon from "../../../public/img/moon.png";
+import sunIcon from "../../../public/img/sun.png";
 import PrimaryBtn from "../global/PrimaryBtn";
 
 const navLinks = [
@@ -70,7 +70,9 @@ export default function Navbar() {
       document.documentElement.style.overflow = "hidden";
       window.addEventListener("keydown", onKey);
       // focus first focusable element in panel (if present)
-      const firstFocusable = (panelRef.current as HTMLElement | null)?.querySelector<HTMLElement>("a,button");
+      const firstFocusable = (
+        panelRef.current as HTMLElement | null
+      )?.querySelector<HTMLElement>("a,button");
       if (firstFocusable) firstFocusable.focus();
     } else {
       document.documentElement.style.overflow = "";
@@ -88,7 +90,7 @@ export default function Navbar() {
     <>
       <header className="z-50 fixed m-0 mx-auto px-0 w-full">
         <div className="wrapper">
-          <nav className="nav-wrapper flex items-center justify-between">
+          <nav className="flex justify-between items-center nav-wrapper">
             {/* Logo */}
             <div className="flex items-center">
               <Image
@@ -107,7 +109,9 @@ export default function Navbar() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    className={`font-medium text-gray-300 hover:text-[#0939d6] duration-200 nav-link ${link.extraClass || ""}`}
+                    className={`font-medium text-[#07080B] dark:text-gray-300 hover:text-[#0939d6] duration-200 nav-link ${
+                      link.extraClass || ""
+                    }`}
                   >
                     {link.label}
                   </Link>
@@ -117,12 +121,12 @@ export default function Navbar() {
 
             {/* Desktop actions */}
             <div className="hidden lg:flex items-center gap-3">
-              <PrimaryBtn text="Get Started"/>
+              <PrimaryBtn text="Get Started" />
 
               <button
                 id="theme-toggle"
                 onClick={toggleTheme}
-                className="theme-toggle-button cursor-pointer"
+                className="cursor-pointer theme-toggle-button"
                 aria-label="Toggle theme"
               >
                 {theme === "dark" ? (
@@ -147,21 +151,43 @@ export default function Navbar() {
             <button
               id="mobile-menu-button"
               ref={mobileButtonRef}
-              className="mobile-menu-button lg:hidden"
-              onClick={() => (isMobileOpen ? closeMobileMenu() : openMobileMenu())}
+              className="lg:hidden mobile-menu-button"
+              onClick={() =>
+                isMobileOpen ? closeMobileMenu() : openMobileMenu()
+              }
               aria-controls="mobile-menu-panel"
               aria-expanded={isMobileOpen}
               aria-label={isMobileOpen ? "Close menu" : "Open menu"}
             >
               {isMobileOpen ? (
                 // X icon when open
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               ) : (
                 // Hamburger when closed
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               )}
             </button>
@@ -173,12 +199,12 @@ export default function Navbar() {
       {isMobileOpen && (
         <div
           id="mobile-menu-overlay"
-          className="fixed inset-0 z-50 flex"
+          className="z-50 fixed inset-0 flex"
           aria-hidden={!isMobileOpen ? "true" : "false"}
         >
           {/* backdrop */}
           <div
-            className="mobile-menu-backdrop fixed inset-0 bg-black/50"
+            className="fixed inset-0 bg-black/50 mobile-menu-backdrop"
             onClick={closeMobileMenu}
             aria-hidden="true"
           />
@@ -187,13 +213,16 @@ export default function Navbar() {
           <div
             id="mobile-menu-panel"
             ref={panelRef}
-            className="mobile-menu-panel relative z-10 w-full max-w-xs bg-white dark:bg-slate-900 shadow-xl p-6 overflow-y-auto"
+            className="z-10 relative bg-white dark:bg-slate-900 shadow-xl p-6 w-full max-w-1/2 overflow-y-auto mobile-menu-panel"
             role="dialog"
             aria-modal="true"
             aria-labelledby="mobile-menu-title"
           >
-            <div className="mobile-menu-header flex items-center justify-between mb-4">
-              <h2 id="mobile-menu-title" className="mobile-menu-title text-lg font-semibold">
+            <div className="flex justify-between items-center mb-4 mobile-menu-header">
+              <h2
+                id="mobile-menu-title"
+                className="font-semibold text-lg mobile-menu-title"
+              >
                 Menu
               </h2>
               <div>
@@ -203,20 +232,30 @@ export default function Navbar() {
                   onClick={closeMobileMenu}
                   aria-label="Close menu"
                 >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  <svg
+                    className="w-5 h-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
                   </svg>
                 </button>
               </div>
             </div>
 
-            <nav className="mobile-menu-nav">
-              <ul className="mobile-menu-list space-y-3">
+            <nav className="flex flex-col justify-between h-full mobile-menu-nav">
+              <ul className="space-y-3 mobile-menu-list">
                 {navLinks.map((link) => (
-                  <li key={link.label}>
+                  <li className="mb-0" key={link.label}>
                     <a
                       href={link.href}
-                      className="mobile-menu-link block text-base font-medium text-slate-700 dark:text-slate-200"
+                      className="block py-3 border-slate-100 dark:border-slate-800 border-b font-medium text-slate-700 dark:text-slate-200 text-base mobile-menu-link"
                       onClick={closeMobileMenu}
                     >
                       {link.label}
@@ -225,8 +264,11 @@ export default function Navbar() {
                 ))}
               </ul>
 
-              <div className="mobile-menu-cta mt-6">
-                <button className="btn-primary w-full" onClick={closeMobileMenu}>
+              <div className="mt-6 mobile-menu-cta">
+                <button
+                  className="w-full cursor-pointer btn-primary get-started-btn"
+                  onClick={closeMobileMenu}
+                >
                   Get Started
                   <FaArrowRight />
                 </button>

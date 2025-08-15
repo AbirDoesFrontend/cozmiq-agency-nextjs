@@ -10,43 +10,43 @@ const Footer = () => {
               <nav className="flex flex-wrap gap-6 text-sm md:text-base">
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   About Us
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Services
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Projects
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Pricing
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Blog
                 </a>
                 <a
                   href="#"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-300 hover:text-[#0939d6] transition-colors"
                 >
                   Contact us
                 </a>

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const HowWeWork = () => {
   return (
-    <section className="bg-black py-24 md:py-28 lg:py-[140px]">
+    <section className="bg-black py-16 lg:py-[140px]">
       <div className="mx-auto wrapper">
         <div className="items-center gap-12 lg:gap-16 grid lg:grid-cols-2">
           <div className="flex flex-col justify-start items-start gap-[20px]">
