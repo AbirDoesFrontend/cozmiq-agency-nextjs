@@ -1015,7 +1015,7 @@ body {
 /* hover/focus visual */
 .get-started-btn:hover,
 .get-started-btn:focus {
-    transform: translateY(-3px) scale(1.02);
+    transform: scale(1.02);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
     inset 0 -1px 0 rgba(0, 0, 0, 0.35),
     0 10px 30px rgba(9, 57, 214, 0.40);
