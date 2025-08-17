@@ -88,7 +88,7 @@ const ServicesSection = () => {
             {ServicesData.map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-[#F9F9F9] hover:bg-[#0939D6] dark:bg-[#0f0f17] dark:bg-[url('/img/Blur.png')] dark:hover:bg-[#0939D6] bg-cover bg-bottom p-8 rounded-[20px] hover:text-white transition-all duration-300 cursor-pointer service-card"
+                className="group relative bg-[#F9F9F9] hover:bg-[#0939D6] dark:bg-[#0f0f17] dark:bg-[url('/img/Blur.png')] dark:hover:bg-[#0939D6] bg-cover bg-bottom p-8 rounded-[16px] hover:text-white transition-all duration-300 cursor-pointer service-card"
               >
                 <div className="flex justify-between items-start mb-8 md:mb-10 lg:mb-12">
                   <Image

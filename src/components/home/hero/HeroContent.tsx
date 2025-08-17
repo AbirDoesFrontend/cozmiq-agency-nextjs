@@ -1,5 +1,6 @@
 import PrimaryBtn from "@/components/global/PrimaryBtn";
 import React from "react";
+import SecondaryBtn from "@/components/global/SeondaryBtn";
 
 const HeroContent = () => {
   return (
@@ -16,9 +17,7 @@ const HeroContent = () => {
 
       <div className="hero-cta-container">
         <PrimaryBtn text="Let's Talk"/>
-        <button className="bg-gray-800/50 hover:bg-gray-800 backdrop-blur px-8 py-3.5 border border-gray-600 rounded-[100px] font-medium text-[16px] text-gray-300 hover:text-[#0939d6] duration-200">
-          Get In Touch
-        </button>
+        <SecondaryBtn text={"Get In Touch"} href={'/'}/>
       </div>
     </div>
   );

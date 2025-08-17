@@ -30,7 +30,7 @@ const TrustedCompaniesCarousel = () => {
   );
 
   return (
-    <div className="trusted-companies-carousel">
+    <div className="trusted-companies-carousel relative">
       <div
         className="animate-marquee trusted-companies-track"
         id="trusted-companies-track"

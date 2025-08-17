@@ -2,7 +2,7 @@
 
 import BadgeSecondary from "@/components/global/BadgeSecondary";
 import { useState } from "react";
-import { CgMoveRight } from "react-icons/cg";
+import { BiDownArrowAlt } from "react-icons/bi";
 
 const faqData = [
   {
@@ -45,7 +45,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="bg-white dark:bg-[#01010A] py-16 lg:py-[140px] dark:pt-0">
+    <section className="bg-white dark:bg-[#01010A] py-16 lg:py-[140px]">
       <div className="mx-auto px-6 lg:px-0 max-w-[1096px]">
         <div className="mb-14 text-center">
           <div className="mb-4">
@@ -68,12 +68,12 @@ const Faq = () => {
                 }`}
             >
               <button
-                className="flex justify-between items-center p-6 w-full text-left"
+                className="flex justify-between items-center p-6 w-full text-left cursor-pointer"
                 onClick={() => toggleFaq(index)}
               >
                 <h4 className="font-semibold faq-text">{faq.question}</h4>
-                <CgMoveRight
-                  className={`w-5 h-5 transition-transform duration-300 transform rotate-90 ${
+                <BiDownArrowAlt
+                  className={`w-5 h-5 transition-transform duration-300 ${
                     activeIndex === index
                       ? " text-white"
                       : " text-[#000000] dark:text-white"
