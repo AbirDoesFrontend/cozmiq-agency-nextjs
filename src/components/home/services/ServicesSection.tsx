@@ -62,7 +62,7 @@ const ServicesData = [
 
 const ServicesSection = () => {
   return (
-    <section className="bg-white dark:bg-black service-sec">
+    <section className="bg-white dark:bg-[#01010A] service-sec">
       <div className="dark:p-0 py-24 md:py-28 lg:py-[140px]">
         <div className="mx-auto wrapper">
           <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end mb-12 lg:mb-16">

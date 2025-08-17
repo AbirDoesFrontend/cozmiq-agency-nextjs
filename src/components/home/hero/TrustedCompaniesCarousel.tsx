@@ -31,10 +31,18 @@ const TrustedCompaniesCarousel = () => {
 
   return (
     <div className="trusted-companies-carousel">
-      <div className="trusted-companies-track" id="trusted-companies-track">
+      <div
+        className="animate-marquee trusted-companies-track"
+        id="trusted-companies-track"
+      >
         {doubledImage.map((image, index) => (
           <div className="trusted-company-item" key={index}>
-            <Image src={image.src} alt={image.alt || ""} width={100} height={100} />
+            <Image
+              src={image.src}
+              alt={image.alt || ""}
+              width={100}
+              height={100}
+            />
           </div>
         ))}
       </div>

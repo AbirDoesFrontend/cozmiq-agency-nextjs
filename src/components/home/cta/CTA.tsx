@@ -7,7 +7,7 @@ import RightTagImage from "../../../../public/img/right-tag.png";
 
 const CTA = () => {
   return (
-    <section className="bg-white dark:bg-black py-16 lg:py-[140px] text-center">
+    <section className="bg-white dark:bg-[#01010A] py-16 lg:py-[140px] text-center">
       <div className="relative py-14 md:py-16 lg:py-[100px] rounded-[20px] cta wrapper">
         <div className="hidden md:block">
           <Image

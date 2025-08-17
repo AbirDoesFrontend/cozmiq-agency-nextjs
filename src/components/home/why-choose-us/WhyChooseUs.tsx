@@ -6,7 +6,7 @@ import WhyChooseUsImage from "../../../../public/img/why-choose-us.png";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#f9f9f9] dark:bg-black py-16 lg:py-[140px] dark:py-0">
+    <section className="bg-[#f9f9f9] dark:bg-[#01010A] py-16 lg:py-[140px] dark:py-0">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl wrapper">
         <div className="flex lg:flex-row flex-col justify-between items-start gap-8 lg:gap-[248px] mb-16">
           <div className="lg:w-1/2">
@@ -48,11 +48,11 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="lg:w-1/2">
-            <div className="space-y-6">
-              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
-                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white text-xl">
+            <div className="space-y-4 lg:space-y-3 xl:space-y-4">
+              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 lg:p-4 xl:p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
+                <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                   Expert Team
-                </h3>
+                </h4>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   Our experienced professionals bring deep expertise in design,
                   development, and digital marketing to deliver high-quality
@@ -60,20 +60,20 @@ const WhyChooseUs = () => {
                 </p>
               </div>
 
-              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
-                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white text-xl">
+              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 lg:p-4 xl:p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
+                <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                   Tailored Solutions
-                </h3>
+                </h4>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   We provide customized strategies that align with your unique
                   business goals, ensuring the best possible outcomes.
                 </p>
               </div>
 
-              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
-                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white text-xl">
+              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 lg:p-4 xl:p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
+                <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                   Collaborative Approach
-                </h3>
+                </h4>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   We work closely with you throughout the process, incorporating
                   your feedback to create a solution that meets your
@@ -81,10 +81,10 @@ const WhyChooseUs = () => {
                 </p>
               </div>
 
-              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
-                <h3 className="mb-4 font-semibold text-gray-900 dark:text-white text-xl">
+              <div className="bg-white dark:bg-[#FFFFFF0D] hover:shadow-xl p-8 lg:p-4 xl:p-8 border dark:border-none rounded-xl transition-all hover:-translate-y-1 duration-300 transform">
+                <h4 className="mb-4 font-semibold text-gray-900 dark:text-white">
                   Proven Results
-                </h3>
+                </h4>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   With a track record of successful projects, we&apos;ve helped
                   businesses grow their online presence and achieve measurable

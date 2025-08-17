@@ -61,7 +61,7 @@ const Pricing = () => {
             </div>
           </div>
 
-          <div className="gap-6 grid lg:grid-cols-3 sm:px-16 md:px-36">
+          <div className="gap-6 grid lg:grid-cols-3 sm:px-16 md:px-36 lg:px-0">
             <div className="group relative hover:bg-[#FFFFFF1A] hover:shadow-2xl border border-[#FFFFFF1A] rounded-[20px] hover:scale-105 active:scale-95 transition-all hover:-translate-y-2 duration-300 cursor-pointer button-hover">
               <div className="p-4">
                 <div className="bg-[#ffffff11] hover:bg-[#ffffff1f] active:bg-[#ffffff1f] mb-8 p-4 rounded-[20px]">

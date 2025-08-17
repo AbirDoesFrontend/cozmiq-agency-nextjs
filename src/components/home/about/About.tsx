@@ -4,12 +4,19 @@ import BadgeSecondary from "@/components/global/BadgeSecondary";
 import PrimaryBtn from "@/components/global/PrimaryBtn";
 import AboutImage from "../../../../public/img/about-image.png";
 import LearnMore from "../../../../public/img/learn-more.png";
+import LearnMoreDark from "../../../../public/img/learn-more2.png";
 
 const About = () => {
   return (
-    <section className="relative about-section">
-      <div className="top-1/2 left-0 absolute w-full h-[150px]">
-        <Image src={LearnMore} alt="bg-img" fill />
+    <section className="z-10 relative about-section">
+      <div className="top-1/2 left-0 -z-10 absolute w-full h-[150px]">
+        <Image src={LearnMore} alt="bg-img" fill className="dark:hidden" />
+        <Image
+          src={LearnMoreDark}
+          alt="bg-img"
+          fill
+          className="hidden dark:inline-block"
+        />
       </div>
       <div className="wrapper">
         <div className="about-content-wrapper">
