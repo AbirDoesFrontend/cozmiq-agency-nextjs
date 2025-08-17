@@ -1,8 +1,8 @@
 "use client";
 
 import BadgeSecondary from "@/components/global/BadgeSecondary";
-import { MoveRight } from "lucide-react";
 import { useState } from "react";
+import { CgMoveRight } from "react-icons/cg";
 
 const faqData = [
   {
@@ -72,7 +72,7 @@ const Faq = () => {
                 onClick={() => toggleFaq(index)}
               >
                 <h4 className="font-semibold faq-text">{faq.question}</h4>
-                <MoveRight
+                <CgMoveRight
                   className={`w-5 h-5 transition-transform duration-300 transform rotate-90 ${
                     activeIndex === index
                       ? " text-white"
