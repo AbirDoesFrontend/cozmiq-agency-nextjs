@@ -124,7 +124,7 @@ export default function Navbar() {
                                     <Link
                                         key={link.label}
                                         href={link.href}
-                                        className={`font-medium text-[#07080B] dark:text-gray-300 hover:text-[#0939d6] duration-200 nav-link ${
+                                        className={`font-medium text-gray-300 hover:text-[#0939d6] duration-200 nav-link ${
                                             link.extraClass || ""
                                         }`}
                                     >
