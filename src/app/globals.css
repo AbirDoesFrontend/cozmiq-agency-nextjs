@@ -679,26 +679,21 @@ body {
     @apply py-16 lg:py-[140px] dark:lg:pt-[140px] dark:pt-16;
 }
 
-.service-card:hover .card-icon-arrow {
-    background-color: var(--color-secondary-500, #bdfb00);
-    border-bottom-width: 15px;
-    border-left-width: 15px;
-
-    transition: background-color 0.3s, transform 0.3s, border-width 0.3s;
-    transform: translate(-8px, 8px) scale(1.2);
-    border-bottom-left-radius: 32px;
-}
-
 .card-icon-arrow {
-    @apply border-white dark:border-black;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-left: 15px solid #01010A;
+    border-bottom: 15px solid #01010A;
 }
+/*.service-card:hover .card-icon-arrow {*/
+/*    background-color: var(--color-secondary-500, #bdfb00);*/
+/*    border-bottom-width: 15px;*/
+/*    border-left-width: 15px;*/
 
-.card-icon-arrow::before {
-    clip-path: path(
-            "M 77 77 L 77,16 A 16 16 0 0 0 61 0 L 0 0 L 0 61 A 16 16 0 0 0 16 77 Z"
-    );
-}
-
+/*    transition: background-color 0.3s, transform 0.3s, border-width 0.3s;*/
+/*    transform: translate(-8px, 8px) scale(1.2);*/
+/*    border-bottom-left-radius: 16px;*/
+/*}*/
 /* Services End */
 
 /* pricing */

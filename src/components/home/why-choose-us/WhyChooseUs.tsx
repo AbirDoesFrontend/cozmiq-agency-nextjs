@@ -6,7 +6,7 @@ import WhyChooseUsImage from "../../../../public/img/why-choose-us.png";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#f9f9f9] dark:bg-[#01010A] py-16 lg:py-[140px] dark:py-0">
+    <section className="bg-[#f9f9f9] dark:bg-[#01010A] py-16 lg:py-[140px]">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl wrapper">
         <div className="flex lg:flex-row flex-col justify-between items-start gap-8 lg:gap-[248px] mb-16">
           <div className="lg:w-1/2">
