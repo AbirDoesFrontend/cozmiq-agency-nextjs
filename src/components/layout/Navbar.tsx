@@ -138,28 +138,28 @@ export default function Navbar() {
                         <div className="hidden lg:flex items-center gap-3">
                             <PrimaryBtn text="Get Started"/>
 
-                            <button
-                                id="theme-toggle"
-                                onClick={toggleTheme}
-                                className="cursor-pointer theme-toggle-button"
-                                aria-label="Toggle theme"
-                            >
-                                {theme === "dark" ? (
-                                    <Image
-                                        src={sunIcon}
-                                        alt="Light mode"
-                                        width={24}
-                                        height={24}
-                                    />
-                                ) : (
-                                    <Image
-                                        src={moonIcon}
-                                        alt="Dark mode"
-                                        width={24}
-                                        height={24}
-                                    />
-                                )}
-                            </button>
+                            {/*<button*/}
+                            {/*    id="theme-toggle"*/}
+                            {/*    onClick={toggleTheme}*/}
+                            {/*    className="cursor-pointer theme-toggle-button"*/}
+                            {/*    aria-label="Toggle theme"*/}
+                            {/*>*/}
+                            {/*    {theme === "dark" ? (*/}
+                            {/*        <Image*/}
+                            {/*            src={sunIcon}*/}
+                            {/*            alt="Light mode"*/}
+                            {/*            width={24}*/}
+                            {/*            height={24}*/}
+                            {/*        />*/}
+                            {/*    ) : (*/}
+                            {/*        <Image*/}
+                            {/*            src={moonIcon}*/}
+                            {/*            alt="Dark mode"*/}
+                            {/*            width={24}*/}
+                            {/*            height={24}*/}
+                            {/*        />*/}
+                            {/*    )}*/}
+                            {/*</button>*/}
                         </div>
 
                         {/* Mobile hamburger */}
