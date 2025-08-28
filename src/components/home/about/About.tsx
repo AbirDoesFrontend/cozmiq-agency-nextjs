@@ -45,7 +45,7 @@ const About = () => {
         </div>
         <div className="about-button-section">
           <div className="about-button-container">
-            <PrimaryBtn text="More About Us" />
+            <PrimaryBtn text="More About Us"/>
           </div>
           <div className="w-full about-image-container">
             <Image

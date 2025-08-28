@@ -1,11 +1,13 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import {ButtonProps} from "@/types/ui/button";
 
-const PrimaryBtn = ({text}: { text: string }) => {
+const PrimaryBtn = ({variant , text}: ButtonProps) => {
+
+    const primaryVariant = variant === "primary";
+
   return (
-    <button className="btn-primary get-started-btn cursor-pointer">
+    <button className={`primary-btn`}>
       {text}
-      <FaArrowRight />
     </button>
   );
 };
