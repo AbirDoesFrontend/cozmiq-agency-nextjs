@@ -7,6 +7,7 @@ interface BadgeSecondaryProps {
   children?: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
+  dark?: boolean;
 }
 
 export default function BadgeSecondary({
@@ -14,17 +15,23 @@ export default function BadgeSecondary({
   children,
   className = "",
   style = {},
+    dark = false,
 }: BadgeSecondaryProps) {
   const [isDark, setIsDark] = useState(false);
 
+  // useEffect(() => {
+  //   try {
+  //     const theme = localStorage.getItem("theme");
+  //     setIsDark(theme === "dark");
+  //   } catch (e) {
+  //     console.log(e)
+  //   }
+  // }, []);
+
   useEffect(() => {
-    try {
-      const theme = localStorage.getItem("theme");
-      setIsDark(theme === "dark");
-    } catch (e) {
-      console.log(e)
-    }
-  }, []);
+      if(dark) setIsDark(true);
+      if(alwaysDark) setIsDark(true);
+  }, [dark , alwaysDark]);
 
   const useDark = alwaysDark || isDark;
   const borderColor = useDark ? "1px solid rgba(255,255,255,0.25)" : "1px solid #D2D2D5";

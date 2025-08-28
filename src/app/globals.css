@@ -505,7 +505,7 @@ body {
 /* About Start */
 /* About Section Components */
 .about-section {
-    @apply relative bg-white dark:bg-[#01010A] py-[60px] lg:py-[140px] text-[#07080B] dark:text-white;
+    @apply relative bg-white py-[60px] lg:py-[140px] text-[#07080B];
 }
 
 .about-content-wrapper {
@@ -517,9 +517,7 @@ body {
 }
 
 .about-text-span {
-    @apply font-semibold md:italic dark:text-[#D5EDFF]
-    text-3xl lg:text-4xl xl:text-5xl
-    leading-snug md:leading-tight lg:leading-tight;
+    @apply font-semibold md:italic text-3xl lg:text-4xl xl:text-5xl leading-snug md:leading-tight lg:leading-tight;
 }
 
 .about-right-section {

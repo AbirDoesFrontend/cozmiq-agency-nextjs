@@ -10,20 +10,20 @@ const About = () => {
   return (
     <section className="z-10 relative about-section">
       <div className="top-1/2 left-0 -z-10 absolute w-full h-[150px]">
-        <Image src={LearnMore} alt="bg-img" fill className="dark:hidden" />
-        <Image
-          src={LearnMoreDark}
-          alt="bg-img"
-          fill
-          className="hidden dark:inline-block"
-        />
+        <Image src={LearnMore} alt="bg-img" fill />
+        {/*<Image*/}
+        {/*  src={LearnMoreDark}*/}
+        {/*  alt="bg-img"*/}
+        {/*  fill*/}
+        {/*  className="hidden dark:inline-block"*/}
+        {/*/>*/}
       </div>
       <div className="wrapper">
         <div className="about-content-wrapper">
           <div className="about-left-section">
             <BadgeSecondary>About Us</BadgeSecondary>
 
-            <p className="text-[#1D1F2C] dark:text-white">
+            <p className="text-[#1D1F2C]">
               At Cozmiq Agency, we are passionate about bringing your business
               vision to life. With a team of experienced designers, developers,
               and strategists, we craft digital experiences that are not just
@@ -34,9 +34,9 @@ const About = () => {
           </div>
 
           <div className="about-right-section">
-            <h2 className="text-[#07080B] dark:text-[#E9E9EA] text-3xl lg:text-4xl xl:text-5xl leading-snug md:leading-tight lg:leading-tight">
+            <h2 className="text-[#07080B] text-3xl lg:text-4xl xl:text-5xl leading-snug md:leading-tight lg:leading-tight">
               Building success with
-              <span className="mx-0.5 about-text-span primary-color">
+              <span className="mx-1.5 about-text-span">
                 creativity, strategy, and innovation
               </span>
               driven by your vision
