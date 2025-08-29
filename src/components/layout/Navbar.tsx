@@ -5,20 +5,17 @@ import {NAV_ITEMS} from "@/constants/nav";
 import Link from "next/link";
 import PrimaryBtn from "@/components/global/PrimaryBtn";
 
-// Note: use public path (no import) if the image is in /public
 const logoSrc = "/img/images-v2/main-nav-logo.png";
 
 export default function Navbar() {
     return (
         <header>
-            <nav
-                className="absolute z-[99999] w-full md:w-[837px] h-auto md:h-[67px] top-4 md:top-10 left-0 md:left-[297px] px-4 md:px-0">
+            <nav className={"fixed top-5 z-50 bg-transparent flex justify-center w-full"}>
                 <div
-                    className="navbar-bg-linear rounded-[100px]">
+                    className="navbar-bg-linear rounded-[100px] min-w-[840px]">
                     <div>
-                        {/* Give this inner content a higher z-index so it's not hidden by the ::before overlay */}
                         <div
-                            className="flex justify-between items-center p-[18px]">
+                            className="flex justify-between items-center py-[8px] px-[10px]">
 
                             <Image
                                 className="w-[120px] md:w-[158px] h-[23px] md:h-[30px] object-contain"
@@ -41,7 +38,7 @@ export default function Navbar() {
                                 ))}
                             </div>
 
-                            <PrimaryBtn text={"Book a Call"} variant={"primary"} />
+                            <PrimaryBtn text={"Book a Call"} variant={"primary"}/>
                         </div>
                     </div>
                 </div>
