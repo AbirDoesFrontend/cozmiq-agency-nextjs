@@ -412,6 +412,10 @@ p{
     @apply inline-flex items-center border-[1px] border-solid rounded-[9999px];
 }
 
+.section{
+   @apply py-[60px] lg:py-[140px];
+}
+
 /* Global */
 .navbar-bg-linear {
     background-image: linear-gradient(90deg, rgba(226, 226, 226, 0.09) 0%, rgba(226, 226, 226, 0.09) 100%);
@@ -440,7 +444,7 @@ p{
 }
 
 .hero-main-title, .hero-main-span {
-    @apply text-white text-[85px] text-center leading-[0.95] uppercase mt-[50px] mb-[75px] tracking-[-6px] font-bold text-center;
+    @apply text-white text-[85px] leading-[0.95] uppercase mt-[50px] mb-[75px] tracking-[-6px] font-bold text-center;
 }
 
 /*.hero-main-content, .hero-main-content span{*/

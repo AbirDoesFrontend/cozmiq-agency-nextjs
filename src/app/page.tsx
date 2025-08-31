@@ -10,23 +10,32 @@ import Testimonials from "@/components/home/testimonials/Testimonials";
 import WhyChooseUs from "@/components/home/why-choose-us/WhyChooseUs";
 import HowWeWork from "@/components/home/work/HowWeWork";
 import HeroV2 from "@/components/home/hero/HeroV2";
+import TemplatesSlider from "@/components/home/templates-slider/TemplatesSlider";
+
+async function getImages() {
+    return ["/img/images-v2/templates/template-one.avif", "/img/images-v2/templates/template-one.avif", "/img/images-v2/templates/template-one.avif", "/img/images-v2/templates/template-one.avif", "/img/images-v2/templates/template-one.avif",];
+}
 
 
-export default function Home() {
-  return (
-    <>
-      <HeroV2 />
-      <About />
-      <Project />
-      <StatsSection />
-      <ServicesSection />
-      <HowWeWork />
-      <Discovery />
-      <WhyChooseUs />
-      <Testimonials />
-      <Pricing />
-      <Faq />
-      <CTA />
-    </>
-  );
+export default async function Home() {
+
+    const templates = await getImages();
+
+    return (<>
+        <HeroV2/>
+        <section className={"flex flex-col gap-3 mt-[-50px] bg-gradient-to-t from-black to-[#1722d9]"}>
+            <TemplatesSlider images={templates} speed={45} direction={"rtl"}/>
+            <TemplatesSlider images={templates} speed={45} direction={"ltr"}/>
+        </section>
+        <Project/>
+        <StatsSection/>
+        <ServicesSection/>
+        <HowWeWork/>
+        <Discovery/>
+        <WhyChooseUs/>
+        <Testimonials/>
+        <Pricing/>
+        <Faq/>
+        <CTA/>
+    </>);
 }
