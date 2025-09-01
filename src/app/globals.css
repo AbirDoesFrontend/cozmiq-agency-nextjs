@@ -416,6 +416,10 @@ p{
    @apply py-[60px] lg:py-[140px];
 }
 
+.section-badge{
+    @apply bg-[#043BCB] px-[15px] py-[10px] uppercase font-bold rounded-[4px] text-white;
+}
+
 /* Global */
 .navbar-bg-linear {
     background-image: linear-gradient(90deg, rgba(226, 226, 226, 0.09) 0%, rgba(226, 226, 226, 0.09) 100%);

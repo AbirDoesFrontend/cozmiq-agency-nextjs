@@ -5,7 +5,7 @@ const StatsSection = () => {
         <section className="stats-section">
             <div className="mx-auto wrapper">
                 <div className="flex items-center gap-3 mb-5">
-                    <BadgeSecondary>Numbers</BadgeSecondary>
+                    <BadgeSecondary text={"Numbers"}/>
                 </div>
 
                 <div className="lg:flex items-end gap-6 lg:gap-20 grid">

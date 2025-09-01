@@ -67,7 +67,7 @@ const ServicesSection = () => {
         <div className="mx-auto wrapper">
           <div className="flex lg:flex-row flex-col lg:justify-between lg:items-end mb-12 lg:mb-16">
             <div className="mb-8 lg:mb-0">
-              <BadgeSecondary>Services We Provide</BadgeSecondary>
+                <BadgeSecondary text={"Services We Provide"}/>
               <h2 className="my-5 text-[#07080B] dark:text-white">
                 Expert Services to Drive Success
               </h2>

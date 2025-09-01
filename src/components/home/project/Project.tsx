@@ -9,45 +9,36 @@ import GamioImage from "../../../../public/img/gamio-project.png";
 import GlowyImage from "../../../../public/img/glowy-project.png";
 import VrboxImage from "../../../../public/img/vrbox-project.png";
 import PrimaryBtn from "@/components/global/PrimaryBtn";
-import Link from "next/link";
-import {FaArrowRight} from "react-icons/fa";
 import SecondaryBtn from "@/components/global/SeondaryBtn";
 
-const PROJECTS = [
-    {
-        id: "gamio",
-        title: "Gamio",
-        tag: "UI/UX Design",
-        category: "UI/UX Design",
-        image: GamioImage,
-        heading: "Gamio Game Landing Page",
-        description:
-            "A playful, conversion-focused landing page for Gamio — built with pixel-perfect UI and smooth interactions.",
-        detailsUrl: "/projects/gamio",
-    },
-    {
-        id: "glowy",
-        title: "Glowy",
-        tag: "WordPress Development",
-        category: "Web Development",
-        image: GlowyImage,
-        heading: "Skin Care Landing Page",
-        description:
-            "A modern skincare landing page implemented on WordPress with custom blocks and responsive layouts.",
-        detailsUrl: "/projects/glowy",
-    },
-    {
-        id: "vrbox",
-        title: "Vrbro",
-        tag: "NestJS Development",
-        category: "Backend Development",
-        image: VrboxImage,
-        heading: "VR Product Landing Page",
-        description:
-            "A high-performance landing page paired with a NestJS backend for product demos and lead capture.",
-        detailsUrl: "/projects/vrbox",
-    },
-];
+const PROJECTS = [{
+    id: "gamio",
+    title: "Gamio",
+    tag: "UI/UX Design",
+    category: "UI/UX Design",
+    image: GamioImage,
+    heading: "Gamio Game Landing Page",
+    description: "A playful, conversion-focused landing page for Gamio — built with pixel-perfect UI and smooth interactions.",
+    detailsUrl: "/projects/gamio",
+}, {
+    id: "glowy",
+    title: "Glowy",
+    tag: "WordPress Development",
+    category: "Web Development",
+    image: GlowyImage,
+    heading: "Skin Care Landing Page",
+    description: "A modern skincare landing page implemented on WordPress with custom blocks and responsive layouts.",
+    detailsUrl: "/projects/glowy",
+}, {
+    id: "vrbox",
+    title: "Vrbro",
+    tag: "NestJS Development",
+    category: "Backend Development",
+    image: VrboxImage,
+    heading: "VR Product Landing Page",
+    description: "A high-performance landing page paired with a NestJS backend for product demos and lead capture.",
+    detailsUrl: "/projects/vrbox",
+},];
 
 const TOP_CLASSES = ["top-10", "top-20", "top-40"];
 
@@ -64,12 +55,11 @@ const Project = () => {
         return PROJECTS.filter((p) => p.category === selectedCategory);
     }, [selectedCategory]);
 
-    return (
-        <section className="project-section">
+    return (<section className="project-section">
             <div className="wrapper projects">
                 <div className="project-content-wrapper">
                     <div className="project-content-left">
-                        <BadgeSecondary always-dark>Projects</BadgeSecondary>
+                        <BadgeSecondary text={"Projects"} />
                         <h2 className="text-white">Our Work Speaks for Itself</h2>
                         <p className="md:max-w-[600px] text-[#FFFFFF]">
                             Take a look at our portfolio to see the incredible projects
@@ -81,34 +71,27 @@ const Project = () => {
                     </div>
                 </div>
 
-                {PROJECTS.length > 3 && (
-                    <button id="scrollBtn" className="btn-primary">
+                {PROJECTS.length > 3 && (<button id="scrollBtn" className="btn-primary">
                         See More →
-                    </button>
-                )}
+                    </button>)}
 
                 <div
                     id="projectButtons"
                     className="project-filter-buttons overflow-x-auto"
                 >
-                    {categories.map((cat) => (
-                        <button
+                    {categories.map((cat) => (<button
                             key={cat}
-                            className={`project-filter-btn text-white hover:text-[#0F1016] hover:bg-white mr-3 whitespace-nowrap py-2 px-4 rounded-full transition-all duration-150 cursor-pointer${
-                                selectedCategory === cat ? "bg-white text-[#0F1016]" : ""
-                            }`}
+                            className={`project-filter-btn text-white hover:text-[#0F1016] hover:bg-white mr-3 whitespace-nowrap py-2 px-4 rounded-full transition-all duration-150 cursor-pointer${selectedCategory === cat ? "bg-white text-[#0F1016]" : ""}`}
                             onClick={() => setSelectedCategory(cat)}
                         >
                             {cat.replace(" ", "\u00A0")}
-                        </button>
-                    ))}
+                        </button>))}
                 </div>
 
                 <div className="gap-8 grid project-grid mx-auto">
                     {filteredProjects.map((project, idx) => {
                         const topClass = TOP_CLASSES[idx % TOP_CLASSES.length];
-                        return (
-                            <div
+                        return (<div
                                 key={project.id}
                                 className={`sticky projects-grid ${topClass}`}
                             >
@@ -135,17 +118,14 @@ const Project = () => {
                                         <SecondaryBtn text={"View Details"} href={project.detailsUrl} arrow/>
                                     </div>
                                 </div>
-                            </div>
-                        );
+                            </div>);
                     })}
 
                     {filteredProjects.length === 0 && (
-                        <p className="text-gray-300">No projects found in this category.</p>
-                    )}
+                        <p className="text-gray-300">No projects found in this category.</p>)}
                 </div>
             </div>
-        </section>
-    );
+        </section>);
 };
 
 export default Project;
