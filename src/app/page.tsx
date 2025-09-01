@@ -7,6 +7,8 @@ import Testimonials from "@/components/home/testimonials/Testimonials";
 import WhyChooseUs from "@/components/home/why-choose-us/WhyChooseUs";
 import HeroV2 from "@/components/home/hero/HeroV2";
 import TemplatesSlider from "@/components/home/templates-slider/TemplatesSlider";
+import ImageSlider from "@/components/home/image-slider/ImageSlider";
+import GSAPImageScroller from "@/components/home/image-slider/ImageSlider";
 
 async function getFirstSliderImages() {
     return ["/img/images-v2/templates/template-one.avif", "/img/images-v2/templates/template-two.avif", "/img/images-v2/templates/template-three.avif"];
@@ -28,6 +30,7 @@ export default async function Home() {
             <TemplatesSlider images={templates} speed={120} direction={"rtl"}/>
             <TemplatesSlider images={secondTemplates} speed={120} direction={"ltr"}/>
         </section>
+        <ImageSlider />
         <Project/>
         <StatsSection/>
         <ServicesSection/>
