@@ -22,15 +22,15 @@ const StatsSection = () => {
 
                 <div className="mt-12 md:mt-16 lg:mt-20.5">
                     <div>
-                        <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-23">
-                            <div className="mb-[40px] border border-[#D2D2D5] rounded-[60px] overflow-hidden">
+                        <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-23 justify-center">
+                            <div className="border border-[#D2D2D5] rounded-[60px] overflow-hidden">
                                 <div className="py-8 text-center">
                                     <h5 className="opacity-80 group-hover:opacity-100 font-medium text-[#07080B] text-[20px] dark:text-white transition-opacity duration-300">
                                         Happy Customers
                                     </h5>
                                 </div>
                                 <div
-                                    className="group bg-[#0939D6] hover:shadow-2xl py-[100px] rounded-b-[60px] h-full overflow-hidden text-white text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
+                                    className="group bg-[#0939D6] hover:shadow-2xl py-[60px] md:py-[100px] rounded-b-[60px] h-full overflow-hidden text-white text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
                                     <div
                                         className="font-bold text-4xl lg:text-5xl group-hover:scale-110 transition-transform duration-300">
                                         150+
@@ -45,7 +45,7 @@ const StatsSection = () => {
                                     </h5>
                                 </div>
                                 <div
-                                    className="group bg-[#4A4C56] hover:shadow-2xl py-[100px] rounded-b-[60px] h-full overflow-hidden text-white text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
+                                    className="group bg-[#4A4C56] hover:shadow-2xl py-[60px] md:py-[100px] rounded-b-[60px] h-full overflow-hidden text-white text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
                                     <div
                                         className="font-bold text-4xl lg:text-5xl group-hover:scale-110 transition-transform duration-300">
                                         2+
@@ -60,7 +60,7 @@ const StatsSection = () => {
                                     </h5>
                                 </div>
                                 <div
-                                    className="group bg-[#FFD500] hover:shadow-2xl py-[100px] rounded-b-[60px] h-full overflow-hidden text-[#07080B] text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
+                                    className="group bg-[#FFD500] hover:shadow-2xl py-[60px] md:py-[100px] rounded-b-[60px] h-full overflow-hidden text-[#07080B] text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
                                     <div
                                         className="font-bold text-4xl lg:text-5xl group-hover:scale-110 transition-transform duration-300">
                                         200+
@@ -75,7 +75,7 @@ const StatsSection = () => {
                                     </h5>
                                 </div>
                                 <div
-                                    className="group bg-[#07080B] dark:bg-white hover:shadow-2xl py-[100px] rounded-b-[60px] h-full overflow-hidden text-white dark:text-[#07080B] text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
+                                    className="group bg-[#07080B] dark:bg-white hover:shadow-2xl py-[60px] md:py-[100px] rounded-b-[60px] h-full overflow-hidden text-white dark:text-[#07080B] text-center hover:scale-105 transition-all duration-300 cursor-pointer transform">
                                     <div
                                         className="font-bold text-4xl lg:text-5xl group-hover:scale-110 transition-transform duration-300">
                                         100%
