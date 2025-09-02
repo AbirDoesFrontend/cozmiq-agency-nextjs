@@ -448,7 +448,7 @@ p{
 }
 
 .hero-main-title, .hero-main-span {
-    @apply text-white text-[85px] leading-[0.95] uppercase mt-[50px] mb-[75px] tracking-[-6px] font-bold text-center;
+    @apply text-white text-[45px] md:text-[55px] lg:text-[85px] leading-[0.95] uppercase mt-[50px] mb-[75px] lg:tracking-[-6px] font-bold text-center;
 }
 
 /*.hero-main-content, .hero-main-content span{*/
@@ -456,7 +456,7 @@ p{
 /*}*/
 
 .hero-main-content {
-    @apply text-[var(--color-para-span)] font-semibold;
+    @apply text-[var(--color-para-span)] font-semibold text-center;
 }
 
 .hero-main-content span{
