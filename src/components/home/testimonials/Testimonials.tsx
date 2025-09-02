@@ -7,7 +7,8 @@ import ClientImageTwo from "../../../../public/img/client-image-two.png";
 import ClientImageOne from "../../../../public/img/client-imge-one.png";
 import SignImage from "../../../../public/img/sign.png";
 
-const testimonialsData = [{
+const testimonialsData = [
+    {
     image: ClientImageOne,
     name: "John D.",
     position: "CEO of Tech Innovators",
@@ -79,7 +80,7 @@ const Testimonials = () => {
             <div className="mx-auto px-4 sm:px-6 lg:px-8 wrapper">
                 <div className="flex lg:flex-row flex-col justify-between items-start lg:items-end lg:gap-[248px]">
                     <div className="lg:w-1/2">
-                        <div className="mb-4">
+                        <div className="mb-8">
                             <BadgeSecondary text={"Testimonials"} />
                         </div>
                         <h2 className="mb-6 text-black dark:text-white">

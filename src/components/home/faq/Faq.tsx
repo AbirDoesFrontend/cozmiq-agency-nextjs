@@ -34,7 +34,7 @@ const Faq = () => {
     return (<section className="bg-white dark:bg-[#01010A] py-16 lg:py-[140px]">
             <div className="mx-auto px-6 lg:px-0 max-w-[1096px]">
                 <div className="mb-14 text-center">
-                    <div className="mb-4">
+                    <div className="mb-8">
                         <BadgeSecondary text={"FAQs"}/>
                     </div>
                     <h2 className="text-black dark:text-white">
