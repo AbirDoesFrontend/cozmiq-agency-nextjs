@@ -9,7 +9,7 @@ import BadgeLabel from "@/components/BadgeLabel";
 
 const Hero = () => {
     return (
-        <section className="hero-section relative">
+        <section className="relative bg-[#002B9B]">
             <div className="hero-content-wrapper wrapper">
                 <FloatingDecoratives/>
                 <div className="flex flex-col items-center gap-[20px] mx-auto">

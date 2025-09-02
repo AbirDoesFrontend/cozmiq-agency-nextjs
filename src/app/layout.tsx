@@ -1,13 +1,13 @@
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Poppins } from "next/font/google";
 
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-dm-sans",
+const poppins = Poppins({
+    subsets: ["latin"],
+    weight: ["300","400","500","600","700"],
+    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         <Navbar />
         {children}
         <Footer />
