@@ -2,26 +2,20 @@ import Image from "next/image";
 
 import BadgeSecondary from "@/components/global/BadgeSecondary";
 import PrimaryBtn from "@/components/global/PrimaryBtn";
-import AboutImage from "../../../../public/img/about-image.png";
-import LearnMore from "../../../../public/img/learn-more.png";
-import LearnMoreDark from "../../../../public/img/learn-more2.png";
+
+const AboutImage = '/img/about-image.png';
+const LearnMore = '/img/learn-more.png';
 
 const About = () => {
   return (
     <section className="z-10 relative about-section">
       <div className="top-1/2 left-0 -z-10 absolute w-full h-[150px]">
         <Image src={LearnMore} alt="bg-img" fill />
-        {/*<Image*/}
-        {/*  src={LearnMoreDark}*/}
-        {/*  alt="bg-img"*/}
-        {/*  fill*/}
-        {/*  className="hidden dark:inline-block"*/}
-        {/*/>*/}
       </div>
       <div className="wrapper">
         <div className="about-content-wrapper">
           <div className="about-left-section">
-            <BadgeSecondary>About Us</BadgeSecondary>
+            <BadgeSecondary text={"About Us"}/>
 
             <p className="text-[#1D1F2C]">
               At Cozmiq Agency, we are passionate about bringing your business

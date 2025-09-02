@@ -6,12 +6,15 @@ import Link from "next/link";
 import PrimaryBtn from "@/components/global/PrimaryBtn";
 import {useEffect, useState} from "react";
 import Hamburger from "@/components/layout/Hamburger";
+import useMobileNav from "@/hooks/useMobileNav";
+import MobileNavSlider from "@/components/layout/MobileNavSlider";
 
 const logoSrc = "/img/images-v2/main-nav-logo.png";
 
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState(false);
+    const { isOpen, open, close, toggle } = useMobileNav(false);
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -50,11 +53,13 @@ export default function Navbar() {
                         </div>
 
                         <div className={"md:hidden"}>
-                            <Hamburger />
+                            <Hamburger isOpen={isOpen} toggle={toggle} />
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
+        {/* Mobile nav slider portal */}
+        <MobileNavSlider isOpen={isOpen} onClose={close} links={NAV_ITEMS.map(i => ({ label: i.label, href: i.href }))} />
     </header>);
 }

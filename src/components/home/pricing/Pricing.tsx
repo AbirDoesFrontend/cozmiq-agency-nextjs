@@ -22,8 +22,7 @@ const Pricing = () => {
                     <div
                         className="flex lg:flex-row flex-col justify-between items-start gap-8 mb-12 md:mb-16 lg:mb-[84px]">
                         <div className="flex flex-col items-start gap-5 max-w-[546px]">
-                            <BadgeSecondary>Pricing Plan</BadgeSecondary>
-
+                            <BadgeSecondary text={"Pricing Plan"} />
                             <h2 className="text-white">
                                 Affordable Packages to Fit Your Needs
                             </h2>
